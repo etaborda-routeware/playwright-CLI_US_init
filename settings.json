@@ -1,0 +1,37 @@
+{
+  // Python is only used for the reporting/auth-rendering helper scripts.
+  "python.defaultInterpreterPath": "python3",
+  "python.analysis.typeCheckingMode": "basic",
+
+  // Hide generated/runtime state from the explorer - none of this is source.
+  "files.exclude": {
+    "**/.auth": true,
+    "**/.playwright-cli": true,
+    "**/.playwright": true,
+    "**/.claude": true,
+    "**/__pycache__": true
+  },
+
+  // Keep noisy generated HTML/JSONL reports out of text search results.
+  "search.exclude": {
+    "reports/**": true
+  },
+
+  // Treat scenario/login templates as plain JS for syntax highlighting + IntelliSense.
+  "files.associations": {
+    "*.template.js": "javascript"
+  },
+
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "[shellscript]": {
+    "editor.tabSize": 2
+  },
+
+  "shellcheck.enable": true,
+  "shellformat.flag": "-i 2"
+}

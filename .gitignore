@@ -1,3 +1,21 @@
+.auth/
+auth/credentials.json
+.playwright-cli/
+.playwright/
+.claude/
+reports/
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+# Python
+__pycache__/
+
 # Logs
 logs
 *.log

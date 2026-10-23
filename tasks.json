@@ -1,0 +1,450 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run all scenarios",
+      "detail": "Runs run-scenarios.sh with no arguments: logs in, then runs every scenario in scenarios/.",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "run-scenarios.sh"
+      ],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run all Playwright tests",
+      "detail": "npx playwright test: setup project logs in, then every tests/*.spec.js on chromium/firefox/webkit.",
+      "type": "shell",
+      "command": "npx",
+      "args": [
+        "playwright",
+        "test"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Playwright tests (chromium only)",
+      "type": "shell",
+      "command": "npx",
+      "args": [
+        "playwright",
+        "test",
+        "--project=chromium"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run scenario: create-delete-facility",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "run-scenarios.sh",
+        "scenarios/create-delete-facility.js"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run scenario: create-delete-staff",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "run-scenarios.sh",
+        "scenarios/create-delete-staff.js"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run scenario: create-edit-city-alert",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "run-scenarios.sh",
+        "scenarios/create-edit-city-alert.js"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run scenario: create-edit-geofence",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "run-scenarios.sh",
+        "scenarios/create-edit-geofence.js"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run scenario: create-edit-staff-details",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "run-scenarios.sh",
+        "scenarios/create-edit-staff-details.js"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run scenario: create-edit-vehicle-details",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "run-scenarios.sh",
+        "scenarios/create-edit-vehicle-details.js"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run scenario: create-location-alert",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "run-scenarios.sh",
+        "scenarios/create-location-alert.js"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run scenario: create-vehicle",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "run-scenarios.sh",
+        "scenarios/create-vehicle.js"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run scenario: verify-app-settings-menu",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "run-scenarios.sh",
+        "scenarios/verify-app-settings-menu.js"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run scenario: verify-app-settings-page",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "run-scenarios.sh",
+        "scenarios/verify-app-settings-page.js"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run scenario: verify-billing-invoicing-feature-flag",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "run-scenarios.sh",
+        "scenarios/verify-billing-invoicing-feature-flag.js"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run scenario: verify-billing-tab",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "run-scenarios.sh",
+        "scenarios/verify-billing-tab.js"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run scenario: verify-customer-creation-and-delete-deactivated",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "run-scenarios.sh",
+        "scenarios/verify-customer-creation-and-delete-deactivated.js"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run scenario: verify-customers-page-default-search-parameters",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "run-scenarios.sh",
+        "scenarios/verify-customers-page-default-search-parameters.js"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run scenario: verify-customers-page-load-performance",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "run-scenarios.sh",
+        "scenarios/verify-customers-page-load-performance.js"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run scenario: verify-customers-page-ui-consistency-defaults",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "run-scenarios.sh",
+        "scenarios/verify-customers-page-ui-consistency-defaults.js"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run scenario: verify-finance-billing-loads",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "run-scenarios.sh",
+        "scenarios/verify-finance-billing-loads.js"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run scenario: verify-location-creation-available",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "run-scenarios.sh",
+        "scenarios/verify-location-creation-available.js"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run scenario: verify-menus-main",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "run-scenarios.sh",
+        "scenarios/verify-menus-main.js"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run scenario: verify-service-deployer-feature-flag",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "run-scenarios.sh",
+        "scenarios/verify-service-deployer-feature-flag.js"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run scenario: verify-uk-only-features-inactive",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "run-scenarios.sh",
+        "scenarios/verify-uk-only-features-inactive.js"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run scenario: verify-vehicle-details",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "run-scenarios.sh",
+        "scenarios/verify-vehicle-details.js"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Open latest report",
+      "type": "shell",
+      "command": "echo",
+      "args": [
+        "Use the OS-specific command below."
+      ],
+      "windows": {
+        "command": "cmd",
+        "args": [
+          "/c",
+          "start",
+          "",
+          "reports\\latest.html"
+        ]
+      },
+      "linux": {
+        "command": "xdg-open",
+        "args": [
+          "reports/latest.html"
+        ]
+      },
+      "osx": {
+        "command": "open",
+        "args": [
+          "reports/latest.html"
+        ]
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Open Playwright report",
+      "type": "shell",
+      "command": "npx",
+      "args": [
+        "playwright",
+        "show-report"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}
