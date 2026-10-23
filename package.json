@@ -1,0 +1,20 @@
+{
+  "name": "us-pw-automation",
+  "version": "1.0.0",
+  "description": "Playwright-driven UI regression scenarios for the Routeware \"Hauler\" smart city dashboard (`hauler.qa.smartcity.routeware.com`).",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.2"
+  }
+}
